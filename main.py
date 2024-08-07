@@ -163,8 +163,10 @@ def process_images_in_folder(folder_path, vision_prompt, transcription_file_path
     failed_uploads = []
     failed_transcriptions = []
 
+    image_extensions = ['.png', '.jpg', '.jpeg', '.bmp']  # Supported image extensions
+
     for filename in os.listdir(folder_path):
-        if filename.endswith('.png'):
+        if any(filename.lower().endswith(ext) for ext in image_extensions):
             images_processed += 1
             print(f"Processing {filename} from {os.path.basename(folder_path)} -> {topic_name}")
             image_path = os.path.join(folder_path, filename)
