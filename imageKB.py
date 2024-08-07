@@ -11,8 +11,8 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 import qdrant_client
 
 # Load environment variables
-load_dotenv("C:\\Users\\marco\\Downloads\\Biz\\SynergySolutions\\DrivingBot\\py.env")
-folder_path = "C:\\Users\\marco\\Downloads\\Biz\\SynergySolutions\\DrivingBot\\screenshots"
+load_dotenv("C:\\Users\\yourusername\\path\\to\\your\\py.env")
+folder_path = "C:\\Users\\yourusername\\path\\to\\your\\screenshots"
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
