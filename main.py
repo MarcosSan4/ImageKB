@@ -15,7 +15,7 @@ script_dir = os.path.dirname(os.path.realpath(__file__))
 env_path = os.path.join(script_dir, 'py.env')
 
 load_dotenv(env_path)
-folder_path = "C:\\Users\\marco\\Downloads\\Biz\\SynergySolutions\\DrivingBot\\screenshots"
+folder_path = os.path.join(script_dir, "screenshots")
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
